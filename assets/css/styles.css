@@ -1,5 +1,938 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
+}
+/*General*/
+.Hero2,.Hero3,.Hero4,.Hero5,.Hero6,.Hero8,.Hero9{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 125px;
+    align-items: center;
+}
+.HeroTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 550px;
+}
+.HeroPublicidad,.HeroPublicidad1,.HeroPublicidad2,.HeroPublicidad3,
+.HeroPublicidad4,.HeroPublicidad5,.HeroPublicidad6,.HeroPublicidad7,
+.HeroPublicidad8,.HeroPublicidad9,.HeroPublicidad10,.HeroPublicidad11,
+.HeroPublicidad12,.HeroPublicidad13,.HeroPublicidad14
+,.HeroPublicidad15,.HeroPublicidad16{
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-around;
+    background-position: center 35%;
+}
+.Videos{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.05);
+}
+.Videos img{
+    width: 550px;
+    height: 350px;
+}
+.VideosTxt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.VideosTxt h2{
+    font-size: 40px;
+}
+.VideoGrande{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.05);
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+.VideoGrande img{
+    width: 700px;
+    height: 450px;
+}
+.PublicidadTxt{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PublicidadTxt h2{
+    color: #fff;
+    font-size: 40px;
+}
+.PublicidadTxt2{
+    background: rgba(53, 67, 76, 0.08);
+    backdrop-filter: blur(50px);
+    color: #fff;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Renta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.Renta img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+.RentaTxt{
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.RentaTxt h2{
+    font-size: 42px;
+}
+.Publicidad4{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Publicidad4 img{
+    width: 550px;
+    height: 500px;
+    border-radius: 20px;
+}
+.Publicidad4Txt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Publicidad4Txt h2{
+    font-size: 40px;
+}
+.InfoContacto{
+    background: url(../Img/Info.svg);
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.Contacto{
+    color: #fff;
+    background-color: #2EA3F2CC;
+    height: 390px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Contacto h2{
+    font-size: 30px;
+}
+.ContactoTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.ContactoTxt a{
+    color: #fff;
+    text-decoration: underline;
+}
+.LinksFooter{
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.LinksFooterTxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.LinksTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.LinksTxt a{
+    text-decoration: none;
+    color: #000;
+}
+.LinksTxt a:hover{
+    text-decoration: underline;
+}
+.Sociales{
+    height: 118px;
+    width: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.Sociales img{
+    width: 35px;
+}
+.LineaHorizontal{
+    border-top: 3px solid;
+    color: #000000;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.Copy{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Home Page*/
+.BarraNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.BarraNav a{
+    text-decoration: none;
+}
+.Links{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+}
+.Links li a{
+    color: #000000;
+    text-decoration: none;
+}
+.MenuVertical{
+    position: absolute;
+    list-style: none;
+    display: none;
+    padding: 10px 25px;
+    background-color: #fff;
+    line-height: 40px;
+}
+.MenuVertical li:hover{
+    text-decoration: underline;
+}
+.Links li:hover .MenuVertical {
+    display: block;
+}
+.Links li:hover{
+    display: block;
+    text-decoration: underline;
+}
+.ContactaNav{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 10px;
+}
+.Hero1{
+    height: 730px;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.70) 33.35%, rgba(0, 0, 0, 0.00) 100%), url(../Img/Hero1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: right center;
+}
+.Hero1Txt{
+    color: rgb(255, 255, 255);
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    justify-content: space-around;
+    gap: 40px;
+}
+.Hero1Txt h1{
+    font-size: 50px;
+}
+.ContactaHero{
+    background-color: #fff;
+    color: black;
+    width: 180px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+.Talentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Talentos h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.Talentos img{
+    width: 300px;
+}
+.TalentosTxt{
+    width: 800px;
+    height: 170px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.TalentosColumnas{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+.TalentosColumnas a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.TalentosColumnas a:hover{
+    transform:scale(1.1);
+}
+.TalentosColumnas h3{
+    font-size: 30px;
+}
+.Columnas{
+    width: 300px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: var(--Blanco, #FFF);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0 20px 20px;
+}
+.ColumnasTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+}
+.Producciones{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.Producciones h2{
+    font-size: 30px;
+}
+.Producciones img{
+    width: 300px;
+}
+.Produccion{
+    background-color: #3C3C3C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0;
+}
+.ProduccionesTxt{
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.ProduccionesTxt p{
+    width: 70%;
+    margin: auto;
+}
+.ProduccionesTxt h2{
+    font-size: 50px;
+}
+.ProduccionesColumnas{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.ProduccionesColumnas a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.ProduccionesColumnas a:hover{
+    transform:scale(1.1);
+}
+.ProduccionesFila{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.ProduccionesFila a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.Producciones a:hover{
+    transform:scale(1.1);
+}
+.ProduccionesFila img{
+    width: 225px;
+    border-radius: 5px;
+    }
+.Filas{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background: var(--Blanco, #FFF);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+.FilasTxt{
+    width: 300px;
+}
+
+/*Zanqueros*/
+.Hero2{
+    background: url(../Img/Hero2.svg);
+}
+.Hero2 h1{
+    font-size: 60px;
+}
+.HeroPublicidad{
+    background: url(../Img/ZanquerosPublicidad.svg);
+}  
+.Publicidad2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    margin-top: 25px;
+    margin-bottom: 25px;   
+}
+.Publicidad2Txt{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Publicidad2 img{
+    width: 450px;
+    height: 300px;
+}
+.Publicidad2Txt h2{
+    font-size: 42px;
+}
+.VideoGrandeTxt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 850px;
+}
+
+/*Batucada*/
+.Hero3{
+    background: url(/assets/Img/Batucada.png);
+    background-position: center;
+    background-size: cover;
+}
+.Hero3 h1{
+    font-size: 60px;
+}
+.HeroPublicidad1{
+    background: url(/assets/Img/BatucadaPublicidad.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad2{
+    background: url(/assets/Img/MusicosBatucada.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Azteca de Plata*/
+.Hero4{
+    background: url(/assets/Img/HeroAzteca.png);
+}
+.HeroPublicidad3{
+    background: url(/assets/Img/AztecaPublicidad1.png);
+}
+.HeroPublicidad4{
+    background: url(/assets/Img/AztecaPublicidad2.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 35px;
+}
+
+/*Simulador de Carreras*/
+.Hero5{
+    background:url(/assets/Img/HeroSimuladoresCarreras.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroTxt1{
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(75px);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.Videos2{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.05);
+}
+.Videos2 img{
+    width: 550px;
+    height: 350px;
+}
+.Galeria{
+    background: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 75px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.Galeria img{
+    width: 700px;
+    height: 450px;
+}
+.galeria-simuladores{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+.galeria-consolas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+.item-galeria{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+}
+.item-galeria img{
+    display: none;
+}
+.item-galeria:hover{
+    opacity: 0.7;
+}
+.modal{
+    display: none;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    flex-direction: column;
+}
+.modal span{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    background-color: red;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.modal img{
+    width: auto;
+    max-height: 90%;
+    object-fit: contain;
+    padding: 15px
+}
+.HeroPublicidad5{
+    background: url(/assets/Img/SimuladorPublicidad1.png);
+}
+
+/*LetrasGrandes*/
+.Hero6{
+    background: url(/assets/Img/HeroLetrasGrandes.png);
+}
+.HeroPublicidad6{
+    background: url(/assets/Img/LetrasGrandesPublicidad1.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad7{
+    background: url(/assets/Img/LetrasGrandesPublicidad2.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad8{
+    background: url(/assets/Img/LetrasGrandesPublicidad3.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 45px;
+}
+.Boton{
+    display: flex;
+    padding: 19px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    border-radius: 10px;
+    border: 1px solid var(--Blanco, #FFF);
+    background-color: #1877F2;
+    width: 300px;
+}
+.ContactoTxt a{
+    text-decoration: none;
+}
+
+/*RentaVideojuegos*/
+.Hero7{
+    background: url(/assets/Img/HeroRentaVidoejuegos.png);
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 125px;
+    align-items: center;
+}
+.HeroPublicidad9{
+    background: url(/assets/Img/RentaVideojuegosPublicidad1.png);
+    background-size: cover;
+    background-position: centerS;
+}
+.HeroPublicidad10{
+    background: url(/assets/Img/RentaVideojuegosPublicidad2.png);
+    background-size: cover;
+    background-position: center;
+}
+.VideoGrande2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+.VideoGrande2 img{
+    width: 700px;
+    height: 450px;
+}
+
+/*RentaPantallas*/
+.Hero8{
+    background: url(/assets/Img/HeroRentaPantallas.png);
+    background-position: center;
+    background-size: cover;
+}
+.HeroPublicidad11{
+    background: url(/assets/Img/RentaPantallaPublicidad1.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad12{
+    background: url(/assets/Img/RentaVideojuegosPublicidad2.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 45px;
+}
+
+/*Remolque*/
+.Hero9{
+    background: url(/assets/Img/HeroRemolqueVideojuegos.png);
+}
+.HeroPublicidad13{
+    background: url(/assets/Img/RemolquePublicidad1.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad14{
+    background: url(/assets/Img/RemolquePublicidad2.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad15{
+    background: url(/assets/Img/RemolquePublicidad3.png);
+    background-size: cover;
+    background-position: center;
+}
+.HeroPublicidad16{
+    background: url(/assets/Img/RemolquePublicidad4.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 45px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px){
+    .Contacto{
+        height: 450px;
+    }
+    .ContactoTxt{
+        width: 80%;
+    }
+    .LinksFooter{
+        height: 100%;
+        gap: 10px;
+    }
+    .LinksFooterTxt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+    }
+    .Sociales{
+        height: 20%;
+    }
+    .Copy{
+        display: flex;
+        text-align: center;
+    }
+    .BarraNav{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .Links{
+        display: flex;
+        text-align: center;
+        padding: 25px;
+        align-items: center;
+    }
+    .Hero1{
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    .Hero1Txt{
+        padding: 0;
+        width: 70%;
+    }
+    .HeroTxt h1{
+        font-size: 40px;
+    }
+    .LogoNav{
+        display: flex;
+        justify-content: center;
+    }
+    .LogoNav img{
+        width: 100%;
+    }
+    .Talentos{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 35px;
+    }
+    .TalentosTxt{
+        width: 500px;
+    }
+    .TalentosColumnas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .Columnas{
+        width: 350px;
+    }
+    .Columnas img{
+        width: 350px;
+    }
+    .Producciones{
+        display: flex;
+        gap: 25px;
+    }
+    .ProduccionesColumnas{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        gap: 25px;
+        align-items: center;
+    }
+    .ProduccionesFila{
+        display: flex;
+        flex-direction: column;
+    }
+    .Filas{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 0 20px 20px;
+    }
+    .Filas img{
+        width: 350px;
+    }
+    .Hero2{
+        background-size: cover;
+        background-position: center;
+    }
+    .HeroTxt{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Renta{
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        gap: 15px; 
+    }
+    .Renta img{
+        width: 350px;
+        height: 200px;
+    }
+    .Hero2,.Hero3,.Hero4,.Hero5,.Hero6,.Hero7,
+    .Hero8,.Hero9{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 15px 0 15px 0;
+    }
+    .HeroPublicidad,.HeroPublicidad1,.HeroPublicidad2,.HeroPublicidad3,
+    .HeroPublicidad4,.HeroPublicidad5,.HeroPublicidad6,.HeroPublicidad7,
+    .HeroPublicidad8,.HeroPublicidad9,.HeroPublicidad10,.HeroPublicidad11,
+    .HeroPublicidad12,.HeroPublicidad13,.HeroPublicidad14,.HeroPublicidad15
+    ,.HeroPublicidad16{
+        height: 100%;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        padding: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .PublicidadTxt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 14px;
+    }
+    .PublicidadTxt h2{
+        font-size: 30px;
+    }
+    .PublicidadTxt2{
+        width: 450px;
+    }
+    .Publicidad2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Publicidad2 img{
+        width: 350px;
+        height: 200px;
+    }
+    .Videos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px 0 20px 0;
+    }
+    .Videos img{
+        width: 350px;
+        height: 200px;
+    }
+    .VideosTxt{
+        width: 450px;
+    }
+    .VideoGrande{
+        padding: 0 0 20px 0;
+    }
+    .VideoGrande img{
+        width: 450px;
+        height: 350px
+    }
+    .VideoGrandeTxt{   
+        width: 450px; 
+    }
+    .Publicidad4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .Publicidad4 img{
+        width: 450px;
+        height: 350px;
+    }
+    .Publicidad4Txt{
+        width: 450px    ;
+    }
+    .Galeria img{
+        width: 450px;
+        height: 300px;
+    }
+    .galeria-consolas, .galeria-simuladores{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+    .Videos2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Videos2 img{
+        width: 350px;
+        height: 250px;
+    }
+    .VideoGrande2{
+        padding: 15px 0 15px 0;
+    }
+    .VideoGrande2 img{
+            width: 450px;
+            height: 350px;
+    }
+    
 }
