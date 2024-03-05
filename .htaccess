@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    </IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.cubospubilicidad.com$
+RewriteRule (.*) https://cubospubilicidad.com/$1 [R=301,L]
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    Redirect 301 /audio-e-iluminacion /batucada/
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    Redirect 301 /renta-de-simuladores-de-carreras-f1-coches-mexico-df /renta-de-simuladores-de-carreras-coches-cdmx/
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    Redirect 301 /xv-anos /renta-y-venta-de-letras-gigantes-en-3d-para-bodas-y-xv-anos/
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    Redirect 301 /renta-de-maquinitas-clasicas /renta-de-xbox-renta-de-consolas-renta-de-videojuegos/
+</IfModule>
