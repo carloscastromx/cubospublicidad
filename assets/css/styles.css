@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+html{
+    scroll-behavior: smooth;
+}
 /*General*/
 .Hero2,.Hero3,.Hero4,.Hero5,.Hero6,.Hero8,.Hero9{
     height: 500px;
@@ -19,7 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
-    width: 550px;
+    width: 60%;
 }
 .HeroPublicidad,.HeroPublicidad1,.HeroPublicidad2,.HeroPublicidad3,
 .HeroPublicidad4,.HeroPublicidad5,.HeroPublicidad6,.HeroPublicidad7,
@@ -155,6 +158,9 @@
     color: #fff;
     text-decoration: underline;
 }
+footer img{
+    max-width: 100%;
+}
 .LinksFooter{
     height: 325px;
     display: flex;
@@ -274,13 +280,18 @@
     background-color: #fff;
     color: black;
     width: 180px;
-    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.ContactaHero:hover{
+    transform: scale(1.1);
 }
 .Talentos{
     display: flex;
@@ -323,7 +334,7 @@
 }
 .Columnas{
     width: 300px;
-    height: 610px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,6 +349,9 @@
     flex-direction: column;
     gap: 15px;
     font-size: 14px;
+}
+.TalentosColumnas a p, .ProduccionesColumnas a p, .ProduccionesFila a p{
+    font-size: 13px;
 }
 .Producciones{
     margin-top: 45px;
@@ -414,9 +428,12 @@
     background: var(--Blanco, #FFF);
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
     padding: 20px;
+    gap: 30px;
 }
 .FilasTxt{
-    width: 300px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Zanqueros*/
@@ -563,9 +580,9 @@
 .modal{
     display: none;
     background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 30px;
@@ -709,8 +726,14 @@
 
 /*Responsive*/
 @media screen and (max-width: 500px){
+    .Hero1Txt h1{
+        font-size: 40px;
+    }
     .Contacto{
-        height: 450px;
+        height: auto;
+        padding: 40px 0;
+        width: 90%;
+    border-radius: 25px;
     }
     .ContactoTxt{
         width: 80%;
@@ -740,9 +763,11 @@
     }
     .Links{
         display: flex;
+        flex-direction: column;
         text-align: center;
         padding: 25px;
         align-items: center;
+        order: 1;
     }
     .Hero1{
         background-position: center;
@@ -752,7 +777,7 @@
     }
     .Hero1Txt{
         padding: 0;
-        width: 70%;
+        width: 80%;
     }
     .HeroTxt h1{
         font-size: 40px;
@@ -760,9 +785,13 @@
     .LogoNav{
         display: flex;
         justify-content: center;
+        order:0;
     }
     .LogoNav img{
         width: 100%;
+    }
+    header .BarraNav a{
+        order: 2;
     }
     .Talentos{
         display: flex;
@@ -771,13 +800,22 @@
         margin-top: 35px;
     }
     .TalentosTxt{
-        width: 500px;
+        width: 90%;
+        height: auto;
+        gap: 15px;
+    }
+    .Talentos h2, .ProduccionesTxt h2, .VideosTxt h2, .Publicidad4Txt h2, .RentaTxt h2{
+        font-size: 28px;
     }
     .TalentosColumnas{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
+        width: 100%;
+    }
+    .TalentosColumnas h3, .Producciones h2{
+        font-size: 26px;
     }
     .Columnas{
         width: 350px;
@@ -792,19 +830,23 @@
     .ProduccionesColumnas{
         display: flex;
         flex-direction: column;
-        width: 500px;
+        width: 100%;
         gap: 25px;
         align-items: center;
     }
     .ProduccionesFila{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        gap: 40px;
     }
     .Filas{
         display: flex;
         flex-direction: column;
-        width: 350px;
+        width: 80%;
+        margin: auto;
         padding: 0 20px 20px;
+        height: auto;
     }
     .Filas img{
         width: 350px;
@@ -814,7 +856,7 @@
         background-position: center;
     }
     .HeroTxt{
-        width: 450px;
+        width: 90%;
         display: flex;
         flex-direction: column;
     }
@@ -823,6 +865,9 @@
         flex-direction: column;
         text-align: center;    
         gap: 15px; 
+    }
+    .RentaTxt, .Publicidad2Txt{
+        width: 90%;
     }
     .Renta img{
         width: 350px;
@@ -833,7 +878,7 @@
         background-size: cover;
         background-position: center;
         height: auto;
-        padding: 15px 0 15px 0;
+        padding: 20px 0;
     }
     .HeroPublicidad,.HeroPublicidad1,.HeroPublicidad2,.HeroPublicidad3,
     .HeroPublicidad4,.HeroPublicidad5,.HeroPublicidad6,.HeroPublicidad7,
@@ -855,17 +900,22 @@
         justify-content: space-evenly;
         text-align: center;
         font-size: 14px;
+        gap: 20px;
+    }
+    .PublicidadTxt.reverse{
+        flex-direction: column-reverse;
     }
     .PublicidadTxt h2{
         font-size: 30px;
     }
     .PublicidadTxt2{
-        width: 450px;
+        width: auto;
     }
     .Publicidad2{
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
     .Publicidad2 img{
         width: 350px;
@@ -876,24 +926,30 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 20px 0 20px 0;
+        padding: 40px 0;
+        gap: 20px;
     }
     .Videos img{
         width: 350px;
         height: 200px;
     }
     .VideosTxt{
-        width: 450px;
+        width: 90%;
     }
     .VideoGrande{
-        padding: 0 0 20px 0;
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .VideoGrande a{
+        display: flex;
+        justify-content: center;
     }
     .VideoGrande img{
-        width: 450px;
-        height: 350px
+        width: 90%;
+        height: auto;
     }
     .VideoGrandeTxt{   
-        width: 450px; 
+        width: 90%; 
     }
     .Publicidad4{
         display: flex;
@@ -902,17 +958,18 @@
         text-align: center;
         margin-top: 25px;
         margin-bottom: 25px;
+        gap: 20px;
     }
     .Publicidad4 img{
-        width: 450px;
-        height: 350px;
+        width: 90%;
+        height: auto;
     }
     .Publicidad4Txt{
-        width: 450px    ;
+        width: 90%;
     }
     .Galeria img{
-        width: 450px;
-        height: 300px;
+        width: 90%;
+        height: auto;
     }
     .galeria-consolas, .galeria-simuladores{
         grid-template-columns: repeat(2, 1fr);
