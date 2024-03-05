@@ -129,7 +129,7 @@ html{
     font-size: 40px;
 }
 .InfoContacto{
-    background: url(../Img/Info.svg);
+    background: url(../img/Info.svg);
     height: 640px;
     display: flex;
     align-items: center;
@@ -256,7 +256,7 @@ footer img{
 }
 .Hero1{
     height: 730px;
-    background:linear-gradient(90deg, rgba(0, 0, 0, 0.70) 33.35%, rgba(0, 0, 0, 0.00) 100%), url(../Img/Hero1.png);
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.70) 33.35%, rgba(0, 0, 0, 0.00) 100%), url(../img/Hero1.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -438,13 +438,13 @@ footer img{
 
 /*Zanqueros*/
 .Hero2{
-    background: url(../Img/Hero2.svg);
+    background: url(../img/Hero2.svg);
 }
 .Hero2 h1{
     font-size: 60px;
 }
 .HeroPublicidad{
-    background: url(../Img/ZanquerosPublicidad.svg);
+    background: url(../img/ZanquerosPublicidad.svg);
 }  
 .Publicidad2{
     display: flex;
@@ -475,7 +475,7 @@ footer img{
 
 /*Batucada*/
 .Hero3{
-    background: url(../assets/Img/Batucada.png);
+    background: url(../img/Batucada.png);
     background-position: center;
     background-size: cover;
 }
@@ -483,25 +483,25 @@ footer img{
     font-size: 60px;
 }
 .HeroPublicidad1{
-    background: url(../assets/Img/BatucadaPublicidad.png);
+    background: url(../img/BatucadaPublicidad.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad2{
-    background: url(../assets/Img/MusicosBatucada.png);
+    background: url(../img/MusicosBatucada.png);
     background-size: cover;
     background-position: center;
 }
 
 /*Azteca de Plata*/
 .Hero4{
-    background: url(../assets/Img/HeroAzteca.png);
+    background: url(../img/HeroAzteca.png);
 }
 .HeroPublicidad3{
-    background: url(../assets/Img/AztecaPublicidad1.png);
+    background: url(../img/AztecaPublicidad1.png);
 }
 .HeroPublicidad4{
-    background: url(../assets/Img/AztecaPublicidad2.png);
+    background: url(../img/AztecaPublicidad2.png);
     background-position: center;
     background-size: cover;
     margin-bottom: 35px;
@@ -509,7 +509,7 @@ footer img{
 
 /*Simulador de Carreras*/
 .Hero5{
-    background:url(../assets/Img/HeroSimuladoresCarreras.png);
+    background:url(../img/HeroSimuladoresCarreras.png);
     background-size: cover;
     background-position: center;
 }
@@ -608,25 +608,25 @@ footer img{
     padding: 15px
 }
 .HeroPublicidad5{
-    background: url(../assets/Img/SimuladorPublicidad1.png);
+    background: url(../img/SimuladorPublicidad1.png);
 }
 
 /*LetrasGrandes*/
 .Hero6{
-    background: url(../assets/Img/HeroLetrasGrandes.png);
+    background: url(../img/HeroLetrasGrandes.png);
 }
 .HeroPublicidad6{
-    background: url(../assets/Img/LetrasGrandesPublicidad1.png);
+    background: url(../img/LetrasGrandesPublicidad1.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad7{
-    background: url(../assets/Img/LetrasGrandesPublicidad2.png);
+    background: url(../img/LetrasGrandesPublicidad2.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad8{
-    background: url(../assets/Img/LetrasGrandesPublicidad3.png);
+    background: url(../img/LetrasGrandesPublicidad3.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 45px;
@@ -648,7 +648,7 @@ footer img{
 
 /*RentaVideojuegos*/
 .Hero7{
-    background: url(../assets/Img/HeroRentaVidoejuegos.png);
+    background: url(../img/HeroRentaVidoejuegos.png);
     height: 440px;
     display: flex;
     flex-direction: column;
@@ -658,12 +658,12 @@ footer img{
     align-items: center;
 }
 .HeroPublicidad9{
-    background: url(../assets/Img/RentaVideojuegosPublicidad1.png);
+    background: url(../img/RentaVideojuegosPublicidad1.png);
     background-size: cover;
     background-position: centerS;
 }
 .HeroPublicidad10{
-    background: url(../assets/Img/RentaVideojuegosPublicidad2.png);
+    background: url(../img/RentaVideojuegosPublicidad2.png);
     background-size: cover;
     background-position: center;
 }
@@ -682,17 +682,17 @@ footer img{
 
 /*RentaPantallas*/
 .Hero8{
-    background: url(../assets/Img/HeroRentaPantallas.png);
+    background: url(../img/HeroRentaPantallas.png);
     background-position: center;
     background-size: cover;
 }
 .HeroPublicidad11{
-    background: url(../assets/Img/RentaPantallaPublicidad1.png);
+    background: url(../img/RentaPantallaPublicidad1.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad12{
-    background: url(../assets/Img/RentaVideojuegosPublicidad2.png);
+    background: url(../img/RentaVideojuegosPublicidad2.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 45px;
@@ -700,25 +700,25 @@ footer img{
 
 /*Remolque*/
 .Hero9{
-    background: url(../assets/Img/HeroRemolqueVideojuegos.png);
+    background: url(../img/HeroRemolqueVideojuegos.png);
 }
 .HeroPublicidad13{
-    background: url(../assets/Img/RemolquePublicidad1.png);
+    background: url(../img/RemolquePublicidad1.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad14{
-    background: url(../assets/Img/RemolquePublicidad2.png);
+    background: url(../img/RemolquePublicidad2.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad15{
-    background: url(../assets/Img/RemolquePublicidad3.png);
+    background: url(../img/RemolquePublicidad3.png);
     background-size: cover;
     background-position: center;
 }
 .HeroPublicidad16{
-    background: url(../assets/Img/RemolquePublicidad4.png);
+    background: url(../img/RemolquePublicidad4.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 45px;
